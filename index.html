@@ -275,37 +275,26 @@
         <h2 class="heading">Contact <span>Me!</span></h2>
 
         <form name="contact" method="POST" data-netlify="true">
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
-                    <span class="focus"></span>
-                </div>
-            </div>
-
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
-                    <span class="focus"></span>
-                </div>
-            </div>
-
-            <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="your Message" required></textarea>
-                <span class="focus"></span>
-            </div>
-
-            <div class="btn-box btns">
-                <button type="submit" class="btn">Submit</button>
-            </div>
-        </form>
+            <p>
+              <label>Your Name: <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Your Role: <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select></label>
+            </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+          
     </section>
 
     <footer class="footer">
